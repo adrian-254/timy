@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>25-5-10 Technique</title>
+    <link rel="stylesheet" href="pages.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+             Timy
+        </div>
+        <nav>
+             <a href="../index.html" class="home-btn">Home</a>
+        </nav>
+        
+  </header>
+    <section class="landing-page">
+
+        <div class="landing-page-content">
+            <h1>25-5-10 Technique</h1>
+            <p>Just like the <b>Pomodoro</b>,  It helps in maintaining focus and productivity
+            while also incorporating regular breaks to prevent burnout.</p>
+
+            <a href="#main-page" class="btn"> Start Now</a>
+        </div>
+
+        <div class="landing-page-image">
+            <img src="../images/25-5-10.jpg" alt="">
+        </div>
+    </section>  
+    <section id ="main-page">
+        <h4>Why it Works</h4>
+        <ul>
+            <li><b>Structured Focus:</b>The alternating periods of work and breaks help maintain
+                high productivity levels while preventing fatigue.</li>
+            <li><b>Flexibility:</b>This technique can be adjusted based on personal preference or workload,
+                making it versatile for different types of tasks.</li>
+            <li><b>Preventing Burnout:</b> By incorporating both short and slightly longer breaks, 
+                this method balances intense focus with relaxation, reducing the risk of burnout.</li>
+        </ul>
+
+        <br>
+        <h3>Set your Timer Here:</h3>
+        <br>
+        
+        <div class="grid-container">
+            <button onclick="start25MinuteWorkSession()">Start 25-Minute Work Session</button>
+            <button onclick="start5MinuteBreak()">Start 5-Minute Break</button>
+            <button onclick="start10MinuteBreak()">Start 10-Minute Break</button>
+            <button onclick="resetTimer()"class="reset">Reset Timer</button>
+        </div>
+
+        <div class="timer" id="timer">25:00</div>
+    </section>
+
+    <script src="25-5-10-timer.js"></script>
+
+</body>
+</html>

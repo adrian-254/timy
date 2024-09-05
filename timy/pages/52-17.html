@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>52/17 Rule</title>
+    <link rel="stylesheet" href="pages.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+             Timy
+        </div>
+        <nav>
+             <a href="../index.html" class="home-btn">Home</a>
+        </nav>
+        
+  </header>
+    <section class="landing-page">
+        <div class="landing-page-content">
+            <center><h1>The 52/17 Rule.</h1></center>
+            <p>The specific durations of 52 minutes of work and 17 minutes of break may seem unusual,
+            but they were identified as the  <b>optimal balance</b> that allowed workers to maintain high 
+            levels of productivity without diminishing returns.It was created a result of empirical analysis from this study.</p>
+            <a href="#main-page" class="btn"> Start Now</a>
+        </div>
+
+        <div class="landing-page-image">
+            <img src="../images/5217-.jpg" alt="">
+        </div>
+
+
+    </section>
+    <section id ="main-page">
+
+        <h4>Why it Works</h4>
+        <br>
+        <ul>
+            <li><b>Focused Work:</b> The 52-minute work period is long enough to make meaningful progress on a task 
+            but short enough to prevent fatigue or loss of focus.</li>
+            <li><b>Complete Rest:</b>The 17-minute break is sufficiently long to allow for physical and mental recovery,
+            enabling you to maintain high productivity levels throughout the day. 
+            The break encourages activities that are unrelated to work, such as walking, stretching,
+            or even socializing, which helps refresh the mind.</li>
+            <li><b>Sustainable Productivity:</b>The balance between work and rest in this rule promotes sustained productivity
+            over long periods, making it easier to avoid the burnout associated with longer work sessions.</li>
+        </ul>
+
+        <h3>Set Your Timer Here:</h3>
+        
+        <div class="grid-container">
+            <button onclick="startWorkSession()">Start 52-Minute Work Session</button>
+            <button onclick="startBreak()">Start 17-Minute Break</button>
+            <button onclick="resetTimer()"class="reset">Reset Timer</button>
+        </div>   
+        <div class="timer" id="timer">52:00</div>
+
+    </section>
+
+    <script src="52-17-timer.js"></script>
+</body>
+</html>

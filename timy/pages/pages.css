@@ -1,0 +1,258 @@
+
+/**********************
+ Google fonts imports
+***********************/
+
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ysabeau+SC:wght@1..1000&display=swap');
+
+/* 
+    font-family: "Roboto", sans-serif; 
+
+    ========= main-font ============
+    font-family: "Ysabeau SC", sans-serif;
+
+    ===== handwritting font =====
+    font-family: "Bad Script", cursive;
+
+    ===== button font ======
+    font-family: "Poppins", sans-serif;
+*/
+
+/**********************
+ Common Styles
+***********************/
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+
+body{
+    font-family:"Poppins", sans-serif ;
+}
+
+section{
+    height: 100vh;
+    
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+/*****************
+ BUTTON STYLE
+*********************/
+
+.btn, button{
+    background-color:#8f8f8f;
+    width: 70%;
+    margin: 1rem auto 0;
+    font-family: var(--button-font);
+    text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+
+}
+
+.btn:hover,button:hover{
+    background-color: #635d5d;
+}
+
+.reset{
+    background-color: #e45e5e;
+    width: 70%;
+}
+.reset:hover{
+    background-color: #e61c1c;
+}
+
+/****************
+    HEADER 
+*******************/
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Bad Script", cursive;
+    font-weight: 900;
+    height: 10vh;
+    width: 100%;
+}
+
+.home-btn{
+    background-color: #e45e5e;
+    padding: 0 1rem 0;
+}
+.home-btn:hover{
+    background-color: #e61c1c;
+}
+
+/*****************
+ Landing Page
+*********************/
+
+.landing-page{
+    display: flex;
+    width: 97vw;
+    min-height: 100vh;
+    height: auto;
+    margin: 0 auto 0;
+}
+
+.landing-page-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    font-family: "Poppins", sans-serif;
+}
+.landing-page h1,.landing-page h2{
+    font-size: 2.5rem;
+    
+}
+.landing-page-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+.landing-page-image img{
+    width: auto;
+    height: auto;
+}
+
+/*****************
+ Main Page
+*********************/
+
+#main-page{
+    width: 90%;
+    margin: 0 auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+}
+
+#main-page h4{
+    font-size: 2.5rem;
+    text-align: center;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+.grid-container button{
+    border: none;
+    height: 2rem;
+}
+
+.timer{
+    text-align: center;
+    font-size: 7rem;
+}
+ul{
+
+    margin: 1rem auto 2rem;
+}
+h4{
+    font-size:2rem;
+}
+
+
+
+
+
+
+/*****************
+    MEDIA QUERIES
+*********************/
+
+@media screen and (max-width:600px) {
+
+
+body{
+    width: 95%;
+    margin: 0 auto 0;
+}
+    /*****************
+ Landing Page
+*********************/
+
+.landing-page{
+    display: flex;
+   flex-direction: column-reverse;
+}
+
+.landing-page-content {
+    width: 100%;
+    
+}
+.landing-page h1{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.landing-page-image{
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+}
+
+
+/*****************
+ Main Page
+*********************/
+
+#main-page{
+    width: 100%;
+    margin: 0 auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+}
+
+#main-page h4{
+    font-size: 1.6rem;
+    text-align: center;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr ;
+    gap: 1rem;
+    width: 70%;
+    margin: 0 auto 0;
+}
+.grid-container button{
+    display: flex;
+    align-items: center;
+    border: none;
+    height: 2rem;
+}
+
+.timer{
+    text-align: center;
+    font-size: 3rem;
+}
+ul{
+
+    margin: 1rem auto 2rem;
+}
+h3{
+    font-size: 1rem;
+}
+h4{
+    font-size:2rem;
+}
+
+    
+}
+
+
+

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>15-minute Technique</title>
+   <link rel="stylesheet" href="pages.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+             Timy
+        </div>
+        <nav>
+             <a href="../index.html" class="home-btn">Home</a>
+        </nav>
+        
+  </header>
+    <section class="landing-page">
+        <div class="landing-page-content">
+            <h1>15-Minute Sprint</h1>
+            <p>This technique is great for quick, focused bursts of work, 
+            especially when tackling smaller tasks or when motivation is low.
+            It makes starting easier, knowing the session is short.</p>
+            
+            <a href="#main-page" class="btn"> Start Now</a>
+
+        </div>
+
+        <div class="landing-page-image">
+            <img src="../images/15-minute.jpg" alt="">
+        </div>
+
+
+    </section>
+
+    <section id ="main-page">
+        <h4>Why it works</h4>
+        <ul>
+            <li>Ideal for overcoming procrastination by making it easier to start tasks.</li>
+            <li>Allows quick progress on small tasks or when energy and motivation are low.</li>
+            <li>Provides a sense of accomplishment as each segment of the day is completed.</li>
+         </ul>
+
+         <h3>Set your Timer Here:</h3>
+
+         <br>
+
+         <div class="grid-container">
+
+         <button onclick="startSprint()">Start 15-Minute Sprint</button>
+         <button onclick="resetTimer()"class="reset">Reset Timer</button>
+
+         </div>
+
+         <div class="timer" id="timer">15:00</div>
+    </section>
+     
+         <script src="15min-sprint-timer.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2-Hour Focus block</title>
+    <link rel="stylesheet" href="pages.css">
+    
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+             Timy
+        </div>
+        <nav>
+             <a href="../index.html" class="home-btn">Home</a>
+        </nav>
+        
+  </header>
+  
+    <section class="landing-page">
+
+        <div class="landing-page-content">
+            <h1>2-Hour Focus block</h1>
+
+            <p>it's a productivity technique that has evolved from general time management and focus strategies.
+            This method is inspired by research on attention spans and productivity, particularly the idea
+            that humans can sustain high levels of concentration for a limited period before requiring rest.</p>
+
+        </div>
+
+        <div class="landing-page-image">
+            <img src="../images/2-hr.jpg" alt="">
+        </div>
+
+    </section>
+    
+     
+    <section class="main-page">
+        <h4>Why it works</h4>
+
+        <ul>
+            <li><b>Deep Work:</b>It is long enough to make significant progress on complex tasks that require sustained attention.</li>
+            <li><b>Prevents Burnout:</b>The structured break ensures you don’t overextend yourself, reducing the risk of mental fatigue.</li>
+            <li><b>Flexibility</b>You can adapt the length of the work block and break to suit your personal rhythm.</li>
+        </ul>
+
+        <h3>Set your timing here:</h3>
+
+        <div class="grid-container">
+
+            <button onclick="startWorkSession()">Start 2-Hour Work Session</button>
+            <button onclick="startBreak()">Start 20-30 Minute Break</button>
+            <button onclick="resetTimer()"class="reset">Reset Timer</button>
+
+        </div>
+
+        <div class="timer" id="timer">120:00</div>
+
+    </section>
+
+    <script src="2hour-focus-timer.js"></script>
+</body>
+</html>

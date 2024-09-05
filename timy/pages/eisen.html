@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EisenHower Matrix session</title>
+    <link rel="stylesheet" href="pages.css">
+</head>
+<style>
+    .landing-page-content{
+        width: 100%;
+        text-align: center;
+    }
+</style>
+<body>
+
+    <header>
+        <div class="logo">
+             Timy
+        </div>
+        <nav>
+             <a href="../index.html" class="home-btn">Home</a>
+        </nav>
+        
+  </header>
+  
+    <section style="background-color: #E9E9E9;" class="landing-page">
+        <div class="landing-page-content">
+            
+        <h1>EisenHower Matrix</h1>
+        <p>It is a time management tool that helps you prioritize tasks based on their urgency and importance.
+        It was popularized by <b> Dwight D. Eisenhower</b>,the 34th President of the United States, 
+        who was known for his effective time management skills. <br> The matrix is divided into four quadrants,
+        each representing a different combination of urgency and importance:</p>
+        <p>
+        <ol>
+            <li><b>Quadrant 1: Urgent and Important (Do First)</b> <br> <b>Tasks:</b>These are tasks that require immediate attention and have 
+            significant consequences if not completed promptly.
+            Examples include crises, deadlines, and pressing problems. <br> <b>Actions:</b>These tasks should be your top priority. 
+            Focus on completing them as soon as possible.</li>
+            <li><b>Quadrant 2: Not Urgent but Important (Schedule)</b> <br> <b>Tasks:</b>These are important tasks that contribute to your long-term
+            goals but do not require immediate action.Examples include planning, personal development, relationship building, and strategic work.
+            <br> <b>Actions:Schedule these tasks in your calendar and dedicate time to them. 
+            By focusing on these tasks, you can prevent them from becoming urgent in the future.</b></li>
+            <li><b>Quadrant 3: Urgent but Not Important (Delegate)</b> <br> <b>Tasks</b>These tasks demand immediate attention but do not significantly contribute to your long-term goals.
+            Examples include interruptions, meetings, and tasks that others can do. <br> <b>Action:</b> Delegate these tasks to others whenever possible.
+            If you can't delegate, try to minimize the time spent on them.</li>
+            <li><b>Quadrant 4: Not Urgent and Not Important (Eliminate)</b><br><b>Tasks</b>These are time-wasting activities that neither contribute to your goals nor require immediate attention.
+            Examples include trivial activities, excessive entertainment, and unnecessary tasks. <br><b>Actions</b>Eliminate these tasks from your schedule as much as possible. 
+            They do not add value to your productivity or well-being.</li>
+        </ol>
+        </p>
+        <a href="#main-page" class="btn"> Start Now</a>
+        </div>
+        
+        <div class="landing-page-image">
+            <img style="width: 500px; height: 700px;" src="../images/dwight.jfif" alt="">
+        </div>
+
+    </section>
+        <section id ="main-page">
+            <h4>Why it works</h4>
+            <ul>
+                <li><b>Clear Prioritization:</b> Helps you identify which tasks need immediate attention and which can be scheduled or delegated.</li>
+                <li><b>Focus on Long-Term Goals</b>Encourages you to spend more time on important, non-urgent tasks that contribute to your long-term success.</li>
+                <li><b>Efficient Use of Time</b>By delegating or eliminating tasks that are not important, you free up time for more valuable activities.</li>
+            </ul>
+            <h3>Start Your Timer Here</h3>
+                <div class="grid-container">
+                    <button onclick="startImportantUrgent()">Important & Urgent (60 mins)</button>
+                    <button onclick="startImportantNotUrgent()">Important & Not Urgent (45 mins)</button>
+                    <button onclick="startNotImportantUrgent()">Not Important & Urgent (30 mins)</button>
+                    <button onclick="startNotImportantNotUrgent()">Not Important & Not Urgent (15 mins)</button>
+                    <button onclick="resetTimer()"class="reset">Reset Timer</button>
+                </div>
+
+                <div class="timer" id="timer">60:00</div>
+        </section>
+        <script src="eisenhower-timer.js"></script>
+</body>
+</html>

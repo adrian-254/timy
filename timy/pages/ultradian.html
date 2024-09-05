@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultradian Rhythm</title>
+    <link rel="stylesheet" href="pages.css">
+ 
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+             Timy
+        </div>
+        <nav>
+             <a href="../index.html" class="home-btn">Home</a>
+        </nav>
+        
+  </header>
+    <section class="landing-page">
+
+        <div class="landing-page-content">
+            <h1>Ultradian Rhythm</h1>
+            <p>It is a natural cycle in the body that repeats throughout the day, 
+            typically lasting between 90 to 120 minutes.ultradian rhythms 
+            occur multiple times within a day and are associated with periods of heightened
+            alertness followed by periods of lower alertness.It was first introduced by Nathaniel Kleitman
+             (The same founder of <a href="90-minute.html">90-Minute Work Cycle</a>) </p>
+
+            <a href="#main-page" class="btn"> Start Now</a>
+        </div>
+
+        <div class="landing-page-image">
+            <img src="../images/nathaniel.jfif" alt="">
+        </div>
+
+
+    </section>
+
+    <section id ="main-page">       
+        <h4>Why it works:</h4>
+            
+        <ul>
+                
+            <li><b>Optimal Focus:</b>By aligning your work periods with your natural cycles of alertness, 
+            you can maximize your productivity during times when your brain is most efficient.</li>
+
+            <li><b>Reduced Fatigue:</b>Incorporating regular breaks based on your body's rhythms helps prevent burnout and maintains energy levels throughout the day.</li>
+
+            <li><b>Improved Well-being: </b>Acknowledging the need for rest and incorporating 
+            it into your routine can lead to better mental and physical health.</li>
+            </ul>
+            <h4>Set your timing here</h4>
+            <h1>Ultradian Rhythm Timer</h1>
+
+
+            <div class="grid-container">
+                <button onclick="startTimer(90)">Start 90-Minute Work Session</button>
+                <button onclick="startTimer(120)">Start 120-Minute Work Session</button>
+                <button onclick="startBreak()">Start 20-Minute Break</button>
+                <button onclick="resetTimer()" class="reset">Reset Timer</button>
+
+            </div>
+
+            <div class="timer" id="timer">90:00</div>
+
+        </section>
+        
+        <script src="ultradian-timer.js"></script>
+</body>
+</html>

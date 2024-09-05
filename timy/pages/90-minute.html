@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>90-Minute Cycle</title>
+    <link rel="stylesheet" href="pages.css">
+</head>
+
+<body>
+    <header>
+          <div class="logo">
+               Timy
+          </div>
+          <nav>
+               <a href="../index.html" class="home-btn">Home</a>
+          </nav>
+          
+    </header>
+
+    <section style="background-color: #E7E7E7;" class="landing-page">
+
+          <div  class="landing-page-content">
+               <h1>The 90-Minute Work Cycle</h1>
+               <br>
+               <br>
+               <p>
+                    The concept of the 90-minute cycle originates from sleep research conducted by <b>Nathaniel Kleitman</b>,
+                    a pioneering sleep researcher. He discovered that the human sleep cycle consists of 
+                    alternating periods of deep and light sleep, roughly lasting 90 minutes. 
+                    This idea was later extended to waking periods, where the brain experiences
+                    similar cycles of heightened focus and lower energy. <br>
+                    The 90-minute work cycle is rooted in research on <b>ultradian rhythms</b>,
+                    which are natural cycles that occur throughout the day, typically lasting between 90 to 120 minutes.
+                    These rhythms influence various physiological and mental states, such as <b>alertness</b> , <b>energy</b>, and <b>focus.</b>
+
+                   
+               </p>
+               <br>
+
+               <a href="#main-page" class="btn"> Start Now</a>
+          </div> 
+
+          <div class="landing-page-image">
+               <img src="../images/nathaniel.jfif" alt="">
+           </div>
+
+     </section>
+
+
+     <section id ="main-page">
+
+          <h4>Why It Works</h4>
+          <ul>
+               <li><b>Energy Alignment:</b>By working in alignment with your body’s natural energy rhythms,
+                    you can sustain focus and productivity more effectively during the 90-minute period.</li>
+               <li><b>Preventing Burnout:</b>The built-in break after each work cycle ensures that you don’t
+                    overexert yourself, helping to maintain long-term productivity and prevent burnout.</li>
+               <li><b>Improved Concentration:</b>Knowing that you only need to concentrate for a set 90-minute
+                    period can help reduce procrastination and improve the quality of your work.</li>
+          </ul>
+          <br>
+          <br>
+          <h3>Set Your Timing Here</h3>
+          <br>
+          <br>
+
+          <div class="grid-container">
+               <button onclick="startWorkCycle()">Start 90-Minute Work Session</button>
+               <button onclick="startBreak(15)">Start 15-Minute Break</button>
+               <button onclick="startBreak(30)">Start 30-Minute Break</button>
+               <button onclick="resetTimer()" class="reset">Reset Timer</button>
+          </div>
+
+          <div class="timer" id="timer">90:00</div>
+
+          
+
+     </section>
+
+
+    <script src="90min-timer.js"></script>
+</body>
+</html>
